@@ -1,0 +1,26 @@
+{
+ "kind": "static",
+ "n": 15,
+ "seed0": 97350000,
+ "conc": 0.025,
+ "diam_um": 50.0,
+ "f_mla": 1.1,
+ "files": {
+  "field_0000.npz": "28d8eca942d9fb9459ada8ba3941a1e85b192fb43ae4eb1aeb8c87896ed35697",
+  "field_0001.npz": "315efbb66c618389fa3026fd5612bda217cda023761c01e96d1f3cdd452d9c7e",
+  "field_0002.npz": "28158d3cd99c3a897f1d4264dbe59ab0a827b5dd346f29501df16d6983b23fcc",
+  "field_0003.npz": "94e6bd10bc441868d27076d3bff6de1b8f1ade4bea34f35c37b7be8c8406c945",
+  "field_0004.npz": "444d12b6b744c66d0cd4a0d621ed565e82cc4706d0ee84b7cc2e395dc57e48f3",
+  "field_0005.npz": "a83d472e350d0fd0982fc5d0e2045a297110ab808010b8b6c7af6ed19be8f468",
+  "field_0006.npz": "092368615d82eedb819a535ebec6844ae38fe6b00c6c5780e84d7f08a932b368",
+  "field_0007.npz": "a080a90ff75d68595cc4b72620d5acc815057bf2cac4cc547d8168b42f309687",
+  "field_0008.npz": "3b5ead280c571da7e6b1246e4ef0f094afc74ec580017c0b3784e40c3f7c91ca",
+  "field_0009.npz": "6a8925dae437b4a5be3c4d951972d32c70257b9211826acdc93676f97ecf754f",
+  "field_0010.npz": "ca04f97dff93775de980ba5b4c9491ad08f9dfe37a33afb68bad2be8eb0bd9e4",
+  "field_0011.npz": "eb33a3660ca4dd073de51d75c307c6fc031d2daa3115e50886e3f133de7f20c9",
+  "field_0012.npz": "927d4fc09a710d0930bcbc7002c64a6a0e0f60fbaead0e8dd459a6bfbb13c60d",
+  "field_0013.npz": "b2b179b65e5d329f6002ca69fc14d1120eb541b6ccafa7782960ec6d75f91cea",
+  "field_0014.npz": "5b18044c8025703ebfabac4c7a8e9cac9cbc274613253c1d795b003ba17f0a3c"
+ },
+ "seconds": 19.193507432937622
+}

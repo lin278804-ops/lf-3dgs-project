@@ -1,0 +1,7 @@
+{
+ "kind": "pseudo-labels from per-exposure fitting",
+ "n_train": 960,
+ "particles_per_field_mean": 1072.8458333333333,
+ "particles_per_field_sd": 53.10693990404853,
+ "source": "fits/ds9train (fit.py --data ds9train); reference coordinates not used"
+}

@@ -1,0 +1,1084 @@
+{
+ "ab_skip_bcast_s0": {
+  "sha256_best": "2b7b4aaea0726710e1b0f049b3d7b8f0da38f97e0d6b3cbdcdc418c748ffe29d",
+  "bytes": 973370,
+  "config": {
+   "model_kind": null,
+   "seed": 0,
+   "epochs": 20,
+   "lr": 3e-05,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": null,
+   "grid_depth": null,
+   "skip_mode": "broadcast",
+   "render_loss_weight": 1.0,
+   "augment": null
+  },
+  "run_meta": {
+   "exp": "{'name': 'ab_skip_bcast', 'gamma': 1.0, 'teacher_w': 0.0, 'lr': 3e-05, 'teacher': 'none', 'topk': 1500, 'base_channels': 32, 'n_views_cost': 32, 'count_w': 0.0, 'center_type': 'hungarian', 'hung_pos_w",
+   "seed": 0,
+   "dataset": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "n_train": 960,
+   "n_val": 120,
+   "device": "cuda:0",
+   "started": "2026-08-27 12:31:35",
+   "pretrained_ckpt": "output/nmi_sprint/stage2/p6_hn5_s0/best.pt"
+  }
+ },
+ "lift_long": {
+  "sha256_best": "b6babbfca0d7a84a78f09b83f565c8ec772c07b7e3415ce76e7f47baaf9999c3",
+  "bytes": 38637505,
+  "config": {
+   "model_kind": "lift",
+   "seed": 0,
+   "epochs": 20,
+   "lr": 3e-05,
+   "multi": null,
+   "init": "../runs/lift_long_a",
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9649669,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 20,
+   "best_epoch": 20,
+   "best_val_f1": 0.9119762943397453
+  }
+ },
+ "lift_long_a": {
+  "sha256_best": "afa7ca9c3b56fbae587b2bcfeca127b35de8d72daf280c4f8c2a1999e9546972",
+  "bytes": 38637505,
+  "config": {
+   "model_kind": "lift",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": "../runs/lift_s0",
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9649669,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 40,
+   "best_val_f1": 0.9123222629745754
+  }
+ },
+ "lift_n120": {
+  "sha256_best": "fc34038b60cb9ce4851cb9505c26159b0fe2fdc9899813c3bc2e4f4eb33855f7",
+  "bytes": 38637505,
+  "config": {
+   "model_kind": "lift",
+   "seed": 0,
+   "epochs": 160,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": 120,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9649669,
+   "n_train": 120,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 160,
+   "best_epoch": 48,
+   "best_val_f1": 0.5519579820058397
+  }
+ },
+ "lift_s0": {
+  "sha256_best": "a1de4cf8a966d7207a8e2b32bd1af0a45e6c21462cbdb64024131d21c06f21cb",
+  "bytes": 38637505,
+  "config": {
+   "model_kind": "lift",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9649669,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 31,
+   "best_val_f1": 0.9083643840133726
+  }
+ },
+ "lift_s1": {
+  "sha256_best": "941b6087aa9f0bfd528c7f998662c1f124b74711eae287bbe0e823fb540cb0d0",
+  "bytes": 38637505,
+  "config": {
+   "model_kind": "lift",
+   "seed": 1,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9649669,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 31,
+   "best_val_f1": 0.904273153426232
+  }
+ },
+ "mc_lift": {
+  "sha256_best": "47fc4a61d8595769ce1e22fda06353693f0e370b4b50f86d0185db2ca12968ab",
+  "bytes": 38637505,
+  "config": {
+   "model_kind": "lift",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": "0.8,0.9,1.0,1.1",
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9649669,
+   "n_train": 240,
+   "n_val": 15
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 33,
+   "best_val_f1": 0.6714424922584527
+  }
+ },
+ "mc_liftcal": {
+  "sha256_best": "a4709bb12967f7509d523c11b85c026d8aa37ddc9a66fa63c93af05417b78fdd",
+  "bytes": 39438005,
+  "config": {
+   "model_kind": "liftcal",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": "0.8,0.9,1.0,1.1",
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9849477,
+   "n_train": 240,
+   "n_val": 15
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 29,
+   "best_val_f1": 0.7994301085234691
+  }
+ },
+ "mc_liftcal_s1": {
+  "sha256_best": "da3b4c3ac8419cac8a931464b5bf44ab0693586b9e13f09af7203e44d792ea61",
+  "bytes": 39438005,
+  "config": {
+   "model_kind": "liftcal",
+   "seed": 1,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": "0.8,0.9,1.0,1.1",
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9849477,
+   "n_train": 240,
+   "n_val": 15
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 24,
+   "best_val_f1": 0.8109593833331925
+  }
+ },
+ "mc_projlift": {
+  "sha256_best": "c620488a7af3c653d188f7300da29dfc77b0532a70463f029bbd81a5e6629980",
+  "bytes": 37599023,
+  "config": {
+   "model_kind": "projlift",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": "0.8,0.9,1.0,1.1",
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9388549,
+   "n_train": 240,
+   "n_val": 15
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 22,
+   "best_val_f1": 0.6355183349613615
+  }
+ },
+ "mc_v3": {
+  "sha256_best": "8c6ba8d095474f6ae0628bcdc69612add694c155239a8c2e05bd356a84fcb816",
+  "bytes": 1026277,
+  "config": {
+   "model_kind": "v3",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": "0.8,0.9,1.0,1.1",
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 250885,
+   "n_train": 240,
+   "n_val": 15
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 38,
+   "best_val_f1": 0.696124609730473
+  }
+ },
+ "mc_viewlift": {
+  "sha256_best": "37bce07a0790498235a3807a8f25c2c9f715ff5131dd450fa3a9909991a0d901",
+  "bytes": 2058287,
+  "config": {
+   "model_kind": "viewlift",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": "0.8,0.9,1.0,1.1",
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 506917,
+   "n_train": 240,
+   "n_val": 15
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 36,
+   "best_val_f1": 0.828156279742653
+  }
+ },
+ "mc_viewlift_s1": {
+  "sha256_best": "df7a43dcc0841f080af9bd154e271575596e4d60510e43a87365eda7b4bc8197",
+  "bytes": 2058287,
+  "config": {
+   "model_kind": "viewlift",
+   "seed": 1,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": "0.8,0.9,1.0,1.1",
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 506917,
+   "n_train": 240,
+   "n_val": 15
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 35,
+   "best_val_f1": 0.8292240427834393
+  }
+ },
+ "p7_aug": {
+  "sha256_best": "8888ff934d9e711c2186b44a660d2785a199ee311ba3a58598863d3e01ca5368",
+  "bytes": 1026277,
+  "config": {
+   "model_kind": "v3",
+   "seed": 0,
+   "epochs": 20,
+   "lr": 3e-05,
+   "multi": null,
+   "init": "voxel_project/voxel_sim/simu_ltc/output/nmi_sprint/stage2/p7_margin_s0",
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": null,
+   "grid_depth": null,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": true
+  },
+  "meta": {
+   "n_params": 250885,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 20,
+   "best_epoch": 9,
+   "best_val_f1": 0.6461919726045686
+  }
+ },
+ "p7_ctrl": {
+  "sha256_best": "1713584292151b2302892ce65770356a2f5cb389392be2e1a737db31ba5bfc5c",
+  "bytes": 1026277,
+  "config": {
+   "model_kind": "v3",
+   "seed": 0,
+   "epochs": 20,
+   "lr": 3e-05,
+   "multi": null,
+   "init": "voxel_project/voxel_sim/simu_ltc/output/nmi_sprint/stage2/p7_margin_s0",
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": null,
+   "grid_depth": null,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 250885,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 20,
+   "best_epoch": 12,
+   "best_val_f1": 0.8695654497635485
+  }
+ },
+ "p7_margin_s0": {
+  "sha256_best": "e0c63496ced8ce62b494851d92dd026f0ae45ad38ac1185cd819a6bbd64556c7",
+  "bytes": 1023400,
+  "config": {
+   "model_kind": null,
+   "seed": 0,
+   "epochs": 20,
+   "lr": 3e-05,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": null,
+   "grid_depth": null,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": null
+  },
+  "run_meta": {
+   "exp": "{'name': 'p7_margin', 'gamma': 1.0, 'teacher_w': 0.0, 'lr': 3e-05, 'teacher': 'none', 'topk': 1500, 'base_channels': 32, 'n_views_cost': 32, 'count_w': 0.0, 'center_type': 'hungarian', 'hung_pos_w': 0",
+   "seed": 0,
+   "dataset": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "n_train": 960,
+   "n_val": 120,
+   "device": "cuda:0",
+   "started": "2026-08-20 21:23:50",
+   "pretrained_ckpt": "output/nmi_sprint/stage2/p6_hn5_s0/best.pt"
+  }
+ },
+ "p7_mixconc": {
+  "sha256_best": "3134bfe409cc6a28c5fbe3bb20fdcc9c1f430e47414d4de007ab6a282be18c7a",
+  "bytes": 1026277,
+  "config": {
+   "model_kind": "v3",
+   "seed": 0,
+   "epochs": 8,
+   "lr": 3e-05,
+   "multi": null,
+   "init": "voxel_project/voxel_sim/simu_ltc/output/nmi_sprint/stage2/p7_margin_s0",
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset10",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 250885,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 8,
+   "best_epoch": 6,
+   "best_val_f1": 0.6635603975059706
+  }
+ },
+ "p7_node": {
+  "sha256_best": "d259be807b0798d06f4f2a87b4e6ba4ba7002f87738b801973f1e31f210e4c2f",
+  "bytes": 1026277,
+  "config": {
+   "model_kind": "node",
+   "seed": 0,
+   "epochs": 20,
+   "lr": 3e-05,
+   "multi": null,
+   "init": "voxel_project/voxel_sim/simu_ltc/output/nmi_sprint/stage2/p7_margin_s0",
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": null,
+   "grid_depth": null,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 250885,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 20,
+   "best_epoch": 12,
+   "best_val_f1": 0.8743898056130036
+  }
+ },
+ "p7_node_d128": {
+  "sha256_best": "33ed7ca5336011a8e38dee81340a4c46f49087f7a8fcac5e6b004b5733956472",
+  "bytes": 1059045,
+  "config": {
+   "model_kind": "node",
+   "seed": 0,
+   "epochs": 12,
+   "lr": 3e-05,
+   "multi": null,
+   "init": "voxel_project/voxel_sim/simu_ltc/output/nmi_sprint/stage2/p7_margin_s0",
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 128,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 259077,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 12,
+   "best_epoch": 11,
+   "best_val_f1": 0.6258304714210865
+  }
+ },
+ "projlift_long": {
+  "sha256_best": "c614cc76a4d9c9d8e9651dfabee5f8ad3acab3e76caed00c5847863d8e3b54a6",
+  "bytes": 37599023,
+  "config": {
+   "model_kind": "projlift",
+   "seed": 0,
+   "epochs": 20,
+   "lr": 3e-05,
+   "multi": null,
+   "init": "../runs/projlift_long_a",
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9388549,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 20,
+   "best_epoch": 20,
+   "best_val_f1": 0.879942529942405
+  }
+ },
+ "projlift_long_a": {
+  "sha256_best": "f396270d94e23f8c0b49aea6391dc462bfdbb62c6f8ef355fb48229f24dd01b7",
+  "bytes": 37599023,
+  "config": {
+   "model_kind": "projlift",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": "../runs/projlift_s0",
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9388549,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 40,
+   "best_val_f1": 0.8812325668662574
+  }
+ },
+ "projlift_n120": {
+  "sha256_best": "1904a65e36bc2376965d8bfcaccf9f16bdd6d72005b1513e436964d0024cc408",
+  "bytes": 37599023,
+  "config": {
+   "model_kind": "projlift",
+   "seed": 0,
+   "epochs": 160,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": 120,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9388549,
+   "n_train": 120,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 160,
+   "best_epoch": 96,
+   "best_val_f1": 0.6620018408193293
+  }
+ },
+ "projlift_s0": {
+  "sha256_best": "517656fef815d3a42450202da8cfda728a62066b0539c20e3c3bd14cf8d7b108",
+  "bytes": 37599023,
+  "config": {
+   "model_kind": "projlift",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9388549,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 31,
+   "best_val_f1": 0.8815095881365725
+  }
+ },
+ "projlift_s1": {
+  "sha256_best": "6c70bef42ed1aae7f782cb8dc7190b9c3e4049e753129700f35b75f4bd85a9e0",
+  "bytes": 37599023,
+  "config": {
+   "model_kind": "projlift",
+   "seed": 1,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9388549,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 26,
+   "best_val_f1": 0.8781793635446546
+  }
+ },
+ "scratch_s0": {
+  "sha256_best": "aa022d25286417ed6f5880f571a7585e2b0d4ac727d48a1452ecbe2a92636a05",
+  "bytes": 1023400,
+  "config": {
+   "model_kind": null,
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": null,
+   "grid_depth": null,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": null
+  }
+ },
+ "scratch_s0_no_render_loss": {
+  "sha256_best": "6c6eddfb0be710c4bea6210ebb0b8d22539198fdb6d62332bec682ba92a7e9bf",
+  "bytes": 1023400,
+  "config": {
+   "model_kind": null,
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": null,
+   "grid_depth": null,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 0.0,
+   "augment": null
+  }
+ },
+ "seed1": {
+  "sha256_best": "a99c4b53d3387ab68039364bac6b7072277af9ad31111fa49f388595b5044a46",
+  "bytes": 1026277,
+  "config": {
+   "model_kind": "v3",
+   "seed": 1,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": null,
+   "grid_depth": null,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 250885,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 38,
+   "best_val_f1": 0.79812152693912
+  }
+ },
+ "seed2": {
+  "sha256_best": "adfbf15f58e0dc08ed1325a19666ae5c38918dfc297eb63950d828f32dc40853",
+  "bytes": 1026277,
+  "config": {
+   "model_kind": "v3",
+   "seed": 2,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": null,
+   "grid_depth": null,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 250885,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 38,
+   "best_val_f1": 0.8061131167675877
+  }
+ },
+ "student_projlift": {
+  "sha256_best": "957a32b240954730e95d142d9e2cf417cc5fe6c0df2596c6299408f21b8e2e4e",
+  "bytes": 37599023,
+  "config": {
+   "model_kind": "projlift",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "lf-piv-gap-20261121/data/ds9_pseudo",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 9388549,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 21,
+   "best_val_f1": 0.669013552037381
+  }
+ },
+ "student_v3": {
+  "sha256_best": "071c23ffdb92431a2aa031a2d68737e24f8c37a85495414c77a19d7d12c2d383",
+  "bytes": 1026277,
+  "config": {
+   "model_kind": "v3",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "lf-piv-gap-20261121/data/ds9_pseudo",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 250885,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 36,
+   "best_val_f1": 0.6721796585919229
+  }
+ },
+ "v3_long": {
+  "sha256_best": "111ae0b853d689dabe0bc00365cb1f080ff4b7c10e0e2a45d255c8e18aa7960a",
+  "bytes": 1026277,
+  "config": {
+   "model_kind": "v3",
+   "seed": 0,
+   "epochs": 20,
+   "lr": 3e-05,
+   "multi": null,
+   "init": "../runs/v3_long_a",
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 250885,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 20,
+   "best_epoch": 12,
+   "best_val_f1": 0.841487421529085
+  }
+ },
+ "v3_long_a": {
+  "sha256_best": "e8610026bff613e23641b406d2861b24b5a6b7e138eb7d35e4e6f9e103e0da4d",
+  "bytes": 1026277,
+  "config": {
+   "model_kind": "v3",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": "../runs/seed1",
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 250885,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 40,
+   "best_val_f1": 0.8386034288248505
+  }
+ },
+ "v3_n120": {
+  "sha256_best": "b9e5d013134b56112323e3ba73f272d6161a3e71dc9396e5fb42d9417aac2d3c",
+  "bytes": 1026277,
+  "config": {
+   "model_kind": "v3",
+   "seed": 0,
+   "epochs": 160,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": 120,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 250885,
+   "n_train": 120,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 160,
+   "best_epoch": 128,
+   "best_val_f1": 0.6506115351600189
+  }
+ },
+ "viewlift_f120": {
+  "sha256_best": "673a3ae18c9982cc8a68ebada6e4238c62abca73ec434751501af7661cfe8a7f",
+  "bytes": 2058287,
+  "config": {
+   "model_kind": "viewlift",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": "1.2",
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 506917,
+   "n_train": 960,
+   "n_val": 30
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 39,
+   "best_val_f1": 0.795952873802703
+  }
+ },
+ "viewlift_n120": {
+  "sha256_best": "11f3aae04e1b72f2be3b8f93beed6cd4f6073d74245b8b1d5bdb75b54c613b13",
+  "bytes": 2058287,
+  "config": {
+   "model_kind": "viewlift",
+   "seed": 0,
+   "epochs": 160,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": 120,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 506917,
+   "n_train": 120,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 160,
+   "best_epoch": 72,
+   "best_val_f1": 0.6752840107446884
+  }
+ },
+ "viewlift_s0": {
+  "sha256_best": "d26b076e678eb4b2e05b5cfbbb48f82c29175d7bb7fb659fa52124afaba87250",
+  "bytes": 2058287,
+  "config": {
+   "model_kind": "viewlift",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 506917,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 36,
+   "best_val_f1": 0.9181534386813669
+  }
+ },
+ "viewlift_s1": {
+  "sha256_best": "0046fec2bc7f6b3125e8b9107741b707ecc6dda53f229925535fbb93bc60a727",
+  "bytes": 2058287,
+  "config": {
+   "model_kind": "viewlift",
+   "seed": 1,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": null,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 506917,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 33,
+   "best_val_f1": 0.9167605603654931
+  }
+ },
+ "viewlift_w_s0": {
+  "sha256_best": "836d4c5529dd50343b1009d114dd6cf4e3d19aac0fb49071cd7518346dcba730",
+  "bytes": 4429871,
+  "config": {
+   "model_kind": "viewlift",
+   "seed": 0,
+   "epochs": 40,
+   "lr": 0.0001,
+   "multi": null,
+   "init": null,
+   "train_fields": null,
+   "lift_hidden": 256,
+   "data": "voxel_project/voxel_sim/simu_ltc/output/lightfield_dataset9",
+   "grid_depth": 64,
+   "skip_mode": "depth_aware",
+   "render_loss_weight": 1.0,
+   "augment": false
+  },
+  "meta": {
+   "n_params": 1099301,
+   "n_train": 960,
+   "n_val": 120
+  },
+  "trained": {
+   "epochs": 40,
+   "best_epoch": 23,
+   "best_val_f1": 0.9124261353253691
+  }
+ }
+}

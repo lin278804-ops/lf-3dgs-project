@@ -80,3 +80,11 @@ python -m lf_3dgs.optimizer --sample path/to/sample.npz --output output/opt --de
 - `lightfield_dataset9` 及后续合成集
 - 合作方水槽、气流原始 TIFF
 - 论文稿与实验日志
+
+## 论文实验（`paper/`）
+
+论文 *An explicit optical projection makes learned light-field particle reconstruction compact, accurate and testable* 的实验代码在 `paper/` 下：各网络结构、训练与评测、传统基线、逐帧拟合、数据生成与校验、出图脚本，以及每个网络的训练命令。说明见 [paper/README.md](paper/README.md)（英文）。训练循环在 `lf_3dgs/run_s2.py`。
+
+## 许可证
+
+Apache-2.0，见 [LICENSE](LICENSE)。

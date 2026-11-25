@@ -1,0 +1,61 @@
+# Physics-only teacher, LSA-tuned recipe (2026-07-27).
+# Do NOT use stock e7_star_physics.yaml (fair F1 ~0.06 on the diagnostic frame).
+# This is weighted-L1 / signal_weight=10 / 2000 iters / Hungarian off.
+# See lsa_package/rerun_r1.py::tuned_cfg and WHY_ORACLE_TERMS_EXIST.md.
+camera:
+  f_main: 100.0
+  u_obj: 200.0
+  f_mla: 0.8
+  pitch: 0.099
+  pixel_pitch: 0.0045
+  num_mla_x: 232
+  num_mla_y: 186
+  px_per_mla: 22
+
+volume:
+  x_range: [-10.0, 10.0]
+  y_range: [-8.0, 8.0]
+  z_range: [-5.0, 5.0]
+  grid_shape: [64, 128, 128]
+
+stage1:
+  init_mode: "hybrid"
+  hybrid_extra_factor: 0.5
+  n_gaussians_factor: 2.0
+  n_gaussians_fixed: null
+  init_sigma_2d: 0.8
+  init_alpha_logit: -2.0
+  init_noise_std: 0.2
+  backproj_mode: "mean"
+  backproj_threshold: 0.12
+  backproj_stride: 2
+  backproj_min_distance: 2
+  num_iters: 2000
+  lr_mu: 0.02
+  lr_alpha: 0.005
+  lr_sigma: 0.001
+  phase_mu_only: [0, 600]
+  phase_mu_alpha: [600, 1200]
+  phase_all: [1200, 2000]
+  sigma_anneal_start: 3.0
+  sigma_anneal_end: 0.2
+  sigma_anneal_iter_begin: 0
+  sigma_anneal_iter_end: 2000
+  views_per_step: 32
+  render_downsample: 1
+  recon_type: "weighted_l1"
+  recon_weight: 1.0
+  signal_weight: 10.0
+  signal_thr: 0.01
+  hungarian_pos_weight: 0.0
+  hungarian_alpha_weight: 0.0
+  sparsity_weight: 0.001
+  opacity_thr: 0.2
+  alpha_thr: 0.2
+  prune_every: 500
+  densify_every: 0
+  supervision_source: "physics_only"
+  recipe: "physics_tuned_20260727"
+
+seed: 42
+device: "cuda"
